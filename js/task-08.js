@@ -12,7 +12,12 @@ function onSubmit (submit) {
     return alert('Будьласка заповніть всі поля!');
   }
 
-    console.log(`Email: ${email.value}, Password: ${password.value}`);
+  const result = {
+    Email: email.value,
+    Password: password.value,
+  };
+
+  console.log(result);
 
     submit.currentTarget.reset();
 }

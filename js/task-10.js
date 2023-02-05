@@ -20,9 +20,9 @@ function createDiv(amount) {
     div.style.backgroundColor = getRandomHexColor();
     
     boxesArr.push(div);
-
-    boxesEl.append(...boxesArr);
   }
+
+  boxesEl.append(...boxesArr);
 }
 
 destroyBtn.addEventListener('click', destroyDiv)
